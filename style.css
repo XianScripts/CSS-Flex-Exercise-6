@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+  font-family: Roboto, sans-serif;
+  position: relative;
+  min-height: 100%;
+}
+
+img {
+  display: flex;
+  justify-content: center;
+  width: 600px;
+
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+div .buttons {
+  display: flex;
+  justify-content: center;
+  gap: 5px
+}
+
+button {
+  font-family: Roboto, sans-serif;
+  border: none;
+  border-radius: 8px;
+  background: #eee;
+  padding: 0.8%;
+}
+
+input {
+  display: flex;
+  border-radius: 16px;
+  padding: 8px 24px;
+  width: 400px;
+  margin-bottom: 16px;
+}
+
+div .input {
+  display: flex;
+  justify-content: center;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: gray;
+  font-weight: bold;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header .left-links {
+  padding-left: 0;
+}
+.header .left-links, .right-links{
+  gap: 15px;
+  margin: 20px;
+}
+
+.footer {
+  display: flex;
+  flex: 0;
+  justify-content: space-between;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 60px;
+  width: 100%;
+  overflow: hidden; 
+  background-color: #eeeeee; 
+}
+
+.footer .left-links, .right-links{
+  gap: 15px;
+  margin: 20px;
+  display: flex;
+}
+.footer .left-links {
+  padding-left: 0;
+}

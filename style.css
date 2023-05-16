@@ -1,31 +1,66 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+* {
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
 body {
+  /* display: flex; */
   height: 100vh;
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
-  position: relative;
-  min-height: 100%;
 }
 
-img {
+.header {
   display: flex;
-  justify-content: center;
-  width: 600px;
+  flex-basis: 100%;
+  justify-content: space-between;
+  padding-right: 25px;
+}
 
+.footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #eeeeee;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding-right: 25px;
+
+}
+
+.left-links, .right-links {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  gap: 16px;
 }
 
 .content {
   display: flex;
   justify-content: center;
-  margin: 0;
+  flex-wrap: wrap;
+  margin-top: 200px;
 }
 
-div .buttons {
+.input {
   display: flex;
+  flex-basis: 100%;
   justify-content: center;
-  gap: 5px
+}
+
+a {
+  color: dimgray;
+}
+
+ul {
+  text-decoration: none;
+}
+
+img {
+  width: 600px;
 }
 
 button {
@@ -33,64 +68,15 @@ button {
   border: none;
   border-radius: 8px;
   background: #eee;
-  padding: 0.8%;
+  height: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 input {
-  display: flex;
+  border: 1px solid #ddd;
   border-radius: 16px;
   padding: 8px 24px;
   width: 400px;
   margin-bottom: 16px;
-}
-
-div .input {
-  display: flex;
-  justify-content: center;
-}
-
-ul {
-  display: flex;
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-  color: gray;
-  font-weight: bold;
-}
-
-.header {
-  display: flex;
-  justify-content: space-between;
-}
-
-.header .left-links {
-  padding-left: 0;
-}
-.header .left-links, .right-links{
-  gap: 15px;
-  margin: 20px;
-}
-
-.footer {
-  display: flex;
-  flex: 0;
-  justify-content: space-between;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  height: 60px;
-  width: 100%;
-  overflow: hidden; 
-  background-color: #eeeeee; 
-}
-
-.footer .left-links, .right-links{
-  gap: 15px;
-  margin: 20px;
-  display: flex;
-}
-.footer .left-links {
-  padding-left: 0;
 }
